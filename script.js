@@ -8,7 +8,7 @@ var response,data;
     })
     .then(data => {
     data.forEach(element => {
-        let cardClass = addTags('div','card col-md-3 m-3');
+        let cardClass = addTags('div','card col-md-3 col-sm-12 m-3');
         cardClass.style.backgroundColor = '#f2e7e1';
         let cardHead = addTags('h5','card-header text-center');
         cardHead.innerHTML = (element.name).toUpperCase();
